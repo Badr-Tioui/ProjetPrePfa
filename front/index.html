@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connexion — Mon Shop</title>
+ <link rel="stylesheet" href="/front/index.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <header class="brand">
+      <div class="logo" aria-hidden="true">MS</div>
+      <div>
+        <h1 id="title">Bienvenue — Connectez-vous</h1>
+        <p>Accédez à votre compte pour gérer vos commandes et designs</p>
+      </div>
+    </header>
+
+    <form action="#" method="post" novalidate>
+      <!-- Email -->
+      <div>
+        <label for="email">Adresse e‑mail</label>
+        <div class="input" role="group" aria-labelledby="email">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5z" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 8.2l-9 5.6L3 8.2" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <input id="email" name="email" type="email" inputmode="email" required placeholder="votre@email.com" autocomplete="email" />
+        </div>
+      </div>
+
+      <!-- Password with toggle -->
+      <div>
+        <label for="password">Mot de passe</label>
+        <div class="input">
+          <input id="password" name="password" type="password" required placeholder="Entrez votre mot de passe" autocomplete="current-password" aria-describedby="pwd-help" />
+          <button id="togglePwd" type="button" aria-label="Afficher le mot de passe" title="Afficher / masquer le mot de passe" style="background:none;border:0;padding:4px">
+            <svg id="eyeOpen" class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="3" stroke="#6B7280" stroke-width="1.2"></circle></svg>
+            <svg id="eyeClosed" class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none"><path d="M17.94 17.94A10 10 0 0 1 6.06 6.06" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.99 5c-4.43 0-8 3.64-9 7 1 3.36 4.57 7 9 7 1.45 0 2.82-.3 4.05-.83" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 1l22 22" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+        </div>
+        <div id="pwd-help" class="muted" style="margin-top:6px">Votre mot de passe doit contenir au moins 8 caractères.</div>
+      </div>
+
+      <div class="row" style="margin-top:4px">
+        <label style="display:flex;align-items:center;gap:8px;font-weight:500"><input type="checkbox" name="remember"> Se souvenir de moi</label>
+        <a href="#">Mot de passe oublié ?</a>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">Se connecter</button>
+      </div>
+
+      <div class="divider"><span>ou</span></div>
+
+      <div class="socials">
+        <button type="button" aria-label="Connexion avec Google">
+          <svg class="icon" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M533.5 278.4c0-17.4-1.4-34.1-4.1-50.4H272v95.4h147.1c-6.4 34.7-26 64.1-55.6 83.8v69.6h89.7c52.4-48.3 82.3-119.3 82.3-198.4z" fill="#4285F4"/><path d="M272 544.3c73.5 0 135.3-24.4 180.4-66.4l-89.7-69.6c-25.1 17-57.2 27-90.7 27-69.8 0-129-47.1-150.2-110.4H31.7v69.3C76 478.3 168.5 544.3 272 544.3z" fill="#34A853"/><path d="M121.8 327.9c-10.9-32.9-10.9-68.5 0-101.4V157.2H31.7C11.3 203 0 249.9 0 297.4s11.3 94.4 31.7 140.2l90.1-109.7z" fill="#FBBC05"/><path d="M272 107.7c39.9 0 75.8 13.7 104.1 40.6l78.1-78.1C403.2 24.3 335.5 0 272 0 168.5 0 76 66 31.7 157.2l90.1 69.1C143 155 202.2 107.7 272 107.7z" fill="#EA4335"/></svg>
+          Google
+        </button>
+
+        <button type="button" aria-label="Connexion avec Apple">
+          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16.365 1.43c0 1.02-.39 2.01-1.09 2.74-.73.78-1.92 1.66-3.14 1.5-.08-.61.16-1.42.6-2.13.44-.73 1.09-1.36 1.9-1.36.01 0 .01 0 .01 0 .35 0 .77.14 1.12.55.37.44.6 1.05.6 1.72zM20.27 7.45c-.71-.64-1.6-1.02-2.5-.98-.63.03-1.27.29-1.77.65-.6.43-1.1 1.07-1.55 1.72-.36.54-.66 1.11-.91 1.7-.25.57-.44 1.16-.56 1.74-.13.62-.07 1.25.18 1.84.43 1.05 1.43 2.01 2.75 2.01 1.16 0 2.72-.64 3.45-1.44.35-.38.61-.86.78-1.38.25-.8.35-1.66.28-2.49-.05-.57-.21-1.13-.6-1.65-.33-.43-.77-.85-1.1-1.12z" fill="#111"/></svg>
+          Apple
+        </button>
+      </div>
+
+      <p class="muted" style="text-align:center;margin-top:12px">Pas encore de compte ? <a href="#">S'inscrire</a></p>
+    </form>
+  </main>
+
+  <script>
+    // Afficher / masquer mot de passe
+    const pwd = document.getElementById('password');
+    const toggle = document.getElementById('togglePwd');
+    const eyeOpen = document.getElementById('eyeOpen');
+    const eyeClosed = document.getElementById('eyeClosed');
+
+    toggle.addEventListener('click', ()=>{
+      if(pwd.type === 'password'){
+        pwd.type = 'text';
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = '';
+        toggle.setAttribute('aria-label','Masquer le mot de passe');
+      } else {
+        pwd.type = 'password';
+        eyeOpen.style.display = '';
+        eyeClosed.style.display = 'none';
+        toggle.setAttribute('aria-label','Afficher le mot de passe');
+      }
+    });
+
+    // Simple client-side validation hint (non-blocking)
+    document.querySelector('form').addEventListener('submit', (e)=>{
+      const email = document.getElementById('email');
+      if(!email.value || !email.value.includes('@')){
+        e.preventDefault();
+        email.focus();
+        email.style.outline = '2px solid rgba(239,68,68,0.12)';
+        setTimeout(()=>email.style.outline='none',1800);
+      }
+    });
+  </script>
+</body>
+</html>
